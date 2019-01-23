@@ -236,6 +236,12 @@ namespace GraficadorSeñales
                     indiceActul++;
                     if (indiceActul > (double)transformada.Muestras.Count / 2.0) ;
                 }
+
+                double frecuenciaFundamental =
+                    (double)indiceMaximo * señal.FrecuenciaMuestreo / (double)transformada.Muestras.Count;
+                    
+                lblFrecuenciaFundamental.Text =
+                    frecuenciaFundamental.ToString();
                 
 
             }
